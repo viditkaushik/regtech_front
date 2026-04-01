@@ -1,0 +1,86 @@
+.map-card {
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.map-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.map-legend {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.map-container {
+  flex: 1;
+  min-height: 200px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.map-tooltip {
+  background: var(--card-bg-solid);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 0.85rem;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  z-index: 200;
+  pointer-events: none;
+}
+
+.map-tooltip strong {
+  font-size: 0.8rem;
+}
+
+.tooltip-status {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.tooltip-status.compliant {
+  color: #059669;
+}
+
+.tooltip-status.at-risk {
+  color: #d97706;
+}
+
+.tooltip-status.non-compliant {
+  color: #dc2626;
+}
+
+.tooltip-pct {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}

@@ -1,0 +1,134 @@
+.alerts-card {
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.alerts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.alerts-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.alerts-count {
+  min-width: 24px;
+  text-align: center;
+}
+
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.alert-item {
+  display: flex;
+  gap: 0.65rem;
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-left: 3px solid transparent;
+  transition: transform var(--transition-fast), background var(--transition-fast);
+}
+
+.alert-item:hover {
+  transform: translateX(4px);
+  background: rgba(255,255,255,0.04);
+}
+
+.alert-item.priority-high {
+  border-left-color: var(--accent-red);
+}
+
+.alert-item.priority-medium {
+  border-left-color: var(--accent-gold);
+}
+
+.alert-item.priority-low {
+  border-left-color: var(--accent-green);
+}
+
+.alert-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.alert-message {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.alert-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.alert-priority {
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.alert-priority.priority-high {
+  background: var(--accent-red-light);
+  color: var(--accent-red);
+}
+
+.alert-priority.priority-medium {
+  background: var(--accent-gold-light);
+  color: var(--accent-gold);
+}
+
+.alert-priority.priority-low {
+  background: var(--accent-green-light);
+  color: var(--accent-green);
+}
+
+.alert-regulation {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.alerts-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.alerts-empty-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+.alerts-empty p {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+}
+
+.alerts-empty span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}

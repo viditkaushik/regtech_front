@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark Blue & Gold Theme (Shadcn customized) */
+    --background: 224 48% 8%; /* #0a0f1d */
+    --foreground: 210 40% 98%;
+
+    --card: 219 40% 12%; /* #131c2d */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 219 40% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 43 96% 56%; /* #fbbf24 (Gold) */
+    --primary-foreground: 224 48% 8%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 43 96% 56%;
+    --accent-foreground: 224 48% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 17%;
+    --ring: 43 96% 56%; /* Gold ring */
+
+    --radius: 0.75rem;
+    
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Subtle radial gradients inherited from previous aesthetic */
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(251, 191, 36, 0.05) 0%, transparent 40%);
+    background-attachment: fixed;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(251, 191, 36, 0.3);
+}
+
+/* Map specific global overrides for dark theme */
+.rsm-geography {
+  outline: none;
+}
