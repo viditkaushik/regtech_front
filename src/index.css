@@ -4,37 +4,41 @@
 
 @layer base {
   :root {
-    /* Dark Blue & Gold Theme (Shadcn customized) */
-    --background: 224 48% 8%; /* #0a0f1d */
-    --foreground: 210 40% 98%;
+    /* Olive Green & Gold Theme (Shadcn customized) */
+    --background: 85 20% 12%;
+    /* Very dark olive green */
+    --foreground: 85 10% 98%;
 
-    --card: 219 40% 12%; /* #131c2d */
-    --card-foreground: 210 40% 98%;
+    --card: 85 20% 15%;
+    /* Lighter olive card */
+    --card-foreground: 85 10% 98%;
 
-    --popover: 219 40% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 85 20% 15%;
+    --popover-foreground: 85 10% 98%;
 
-    --primary: 43 96% 56%; /* #fbbf24 (Gold) */
-    --primary-foreground: 224 48% 8%;
+    --primary: 43 96% 56%;
+    /* #fbbf24 (Gold) */
+    --primary-foreground: 85 20% 12%;
 
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 85 20% 20%;
+    --secondary-foreground: 85 10% 98%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 85 20% 20%;
+    --muted-foreground: 85 10% 65%;
 
     --accent: 43 96% 56%;
-    --accent-foreground: 224 48% 8%;
+    --accent-foreground: 85 20% 12%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 85 10% 98%;
 
-    --border: 217 33% 20%;
-    --input: 217 33% 17%;
-    --ring: 43 96% 56%; /* Gold ring */
+    --border: 85 20% 25%;
+    --input: 85 20% 20%;
+    --ring: 43 96% 56%;
+    /* Gold ring */
 
     --radius: 0.75rem;
-    
+
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
 }
@@ -43,14 +47,15 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-family);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Subtle radial gradients inherited from previous aesthetic */
-    background-image: 
-      radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 40%),
+    /* Subtle radial gradients - Olive/Gold */
+    background-image:
+      radial-gradient(circle at 10% 20%, rgba(132, 169, 140, 0.05) 0%, transparent 40%),
       radial-gradient(circle at 90% 80%, rgba(251, 191, 36, 0.05) 0%, transparent 40%);
     background-attachment: fixed;
   }

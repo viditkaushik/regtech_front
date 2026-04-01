@@ -56,9 +56,9 @@ module.exports = {
           DEFAULT: "#fbbf24",
           light: "rgba(251, 191, 36, 0.15)",
         },
-        midnight: {
-          DEFAULT: "#0a0f1d",
-          light: "#131c2d",
+        olive: {
+          DEFAULT: "hsl(85, 20%, 12%)",
+          light: "hsl(85, 20%, 15%)",
         }
       },
       borderRadius: {
